@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Julian De La Torre | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="name-block">
+      <h1 class="name" aria-label="Julian De La Torre">
+        <span class="line"><span class="br">&lt;</span>JULIAN</span>
+        <div class="pill" aria-hidden="true">
+          <div class="track" id="track"></div>
+        </div>
+        <span class="line">DE LA TORRE<span class="br"> /&gt;</span><span class="cursor"></span></span>
+      </h1>
+    </div>
+    <div class="hero-links">
+      <button class="btn solid" data-go="projects">View my projects</button>
+      <!-- <a class="btn" href="add-resume-name-here" target="_blank" rel="noopener">Resume</a> -->
+      <a class="btn" href="https://www.linkedin.com/in/julian-de-la-torre" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Juliandltm22" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <button class="down" id="down" aria-label="Scroll to content">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M5 9l7 7 7-7" />
+      </svg>
+    </button>
+  </header>
+
+  <div class="tabbar" id="tabbar">
+    <div class="tabs" role="tablist" aria-label="Portfolio sections">
+      <button class="tab" role="tab" id="t-projects" aria-controls="projects" aria-selected="true">Projects</button>
+      <button class="tab" role="tab" id="t-experiences" aria-controls="experiences" aria-selected="false"
+        tabindex="-1">Experiences</button>
+      <button class="tab" role="tab" id="t-toolkit" aria-controls="toolkit" aria-selected="false"
+        tabindex="-1">Toolkit</button>
+      <button class="tab" role="tab" id="t-about" aria-controls="about" aria-selected="false" tabindex="-1">About
+        Me</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="panel" id="projects" role="tabpanel" aria-labelledby="t-projects">
+      <h2>Projects</h2>
+      <p class="sub">Full-stack and mobile apps, from indoor navigation to AI-powered wellness.</p>
+      <div class="cards">
+        <article class="card feat">
+          <h3>TitanTrails</h3>
+          <div class="meta"><span class="award">🏅2nd Place, CSUF CS Showcase (28 teams)</span><span>December
+              2025</span>
+          </div>
+          <p>A student-first mobile app that mitigates confusion by streamlining indoor navigation.</p>
+          <ul>
+            <li>Combined react-native-maps outdoor routing with a Wi-Fi trilateration algorithm that places users on
+              custom indoor floor plans.</li>
+            <li>Built a FastAPI backend to serve high-resolution floor plans, with Firebase handling secure
+              authentication.</li>
+          </ul>
+          <div class="chips"><span class="chip">React Native</span><span class="chip">JavaScript</span><span
+              class="chip">Firebase</span><span class="chip">FastAPI</span><span class="chip">Node.js</span></div>
+          <!-- <a class="link" href="YOUR_LINK">View on GitHub</a> -->
+        </article>
+        <article class="card">
+          <h3>Coffee Compass</h3>
+          <div class="meta"><span>June 2026</span></div>
+          <p>A mobile-first web app that connects coffee drinkers with independent cafes.</p>
+          <ul>
+            <li>Built a dual-user (consumer and vendor) architecture with a streamlined checkout and a real-time vendor
+              ticket dashboard.</li>
+            <li>Designed a 6-table relational schema on Amazon Aurora with cookie-based session auth and
+              serverless-tuned connection pooling.</li>
+            <li>Used the OpenStreetMap Overpass API and the Haversine formula to rank nearby cafes by exact distance.
+            </li>
+          </ul>
+          <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span
+              class="chip">PostgreSQL</span><span class="chip">Amazon Aurora</span></div>
+        </article>
+        <article class="card">
+          <h3>Rooted: AI Wellness Companion</h3>
+          <div class="meta"><span>August 2026</span></div>
+          <p>A wellness app that turns daily habits into a growing virtual plant.</p>
+          <ul>
+            <li>Gamified hydration, sleep, and mindfulness through a plant-growth mechanic tied to real habits.</li>
+            <li>Built "The Gardener," a Gemini-powered companion on a custom Node.js server that gives personalized
+              recommendations.</li>
+            <li>Architected a Supabase backend, with AsyncStorage for offline-first local state.</li>
+          </ul>
+          <div class="chips"><span class="chip">React Native (Expo)</span><span class="chip">Node.js</span><span
+              class="chip">Gemini API</span><span class="chip">Supabase</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="experiences" role="tabpanel" aria-labelledby="t-experiences" hidden>
+      <h2>Experiences</h2>
+      <p class="sub">Research, teaching, and education.</p>
+      <div class="timeline">
+        <div class="job">
+          <h3>Summer Research Student</h3>
+          <div class="where">Data Science Research Program, CSU Fullerton</div>
+          <div class="when">May 2024 – Jun 2024</div>
+          <ul>
+            <li>Selected for a competitive program under Dr. Bein; used Python statistical modeling to test correlations
+              between age demographics and social media usage.</li>
+            <li>Extracted, cleaned, and processed large social media datasets in Kaggle and Jupyter Notebook to surface
+              behavioral trends.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Tour Coordinator</h3>
+          <div class="where">Puente Club, CSU Fullerton</div>
+          <div class="when">Aug 2025 – May 2026</div>
+          <ul>
+            <li>Organized multiple tours for visiting high schools, met with the schools to plan each visit and coordinated all tour
+            logistics</li>
+            <li>Served as the primary contact for schools, adjusted tour plans to each school’s needs and handled last minute changes
+            </li>
+            <li>Recruited tour guides and personally led tours for groups consisting of 10+ high school students</li>
+          </ul>
+        </div>
+      </div>
+      <div class="edu">
+        <strong>B.S. in Computer Science, California State University, Fullerton</strong>
+        Expected graduation: December 2026
+      </div>
+    </section>
+
+    <section class="panel" id="toolkit" role="tabpanel" aria-labelledby="t-toolkit" hidden>
+      <h2>Toolkit</h2>
+      <p class="sub">What I build with.</p>
+      <div class="groups">
+        <div class="group">
+          <h3>Languages</h3>
+          <div class="chips"><span class="chip">Python</span><span class="chip">C</span><span
+              class="chip">C++</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span
+              class="chip">TypeScript</span><span class="chip">R</span><span class="chip">x86 Assembly</span><span
+              class="chip">HTML/CSS</span><span class="chip">PHP</span><span class="chip">PowerShell</span></div>
+        </div>
+        <div class="group">
+          <h3>Frameworks &amp; Platforms</h3>
+          <div class="chips"><span class="chip">React</span><span class="chip">React Native</span><span
+              class="chip">Node.js</span><span class="chip">FastAPI</span><span class="chip">Firebase</span><span
+              class="chip">Supabase</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span
+              class="chip">Git/GitHub</span><span class="chip">Linux</span></div>
+        </div>
+        <div class="group">
+          <h3>Data, ML &amp; Vision</h3>
+          <div class="chips"><span class="chip">NumPy</span><span class="chip">pandas</span><span
+              class="chip">OpenCV</span><span class="chip">scikit-learn</span><span class="chip">Jupyter</span><span
+              class="chip">Matplotlib</span><span class="chip">PyTorch (learning)</span><span class="chip">Hypothesis
+              testing</span></div>
+        </div>
+        <div class="group">
+          <h3>Practices</h3>
+          <div class="chips"><span class="chip">Full-stack development</span><span class="chip">RESTful APIs</span><span
+              class="chip">Relational database design</span><span class="chip">Cloud (Amazon Aurora)</span><span
+              class="chip">Testing &amp; debugging</span><span class="chip">Technical documentation</span><span
+              class="chip">Agile collaboration</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="about" role="tabpanel" aria-labelledby="t-about" hidden>
+      <h2>About Me</h2>
+      <p class="sub">The person behind the code.</p>
+      <div class="about">
+        <div>
+          <p>Hi! I'm Julian, a Computer Science student at Cal State Fullerton graduating in December 2026. I am a
+            highly
+            motivated student with excellent work ethic and collaborating skills, something that is essential in a
+            workspace. </p>
+          <p>I'm currently exploring new opportunities in software development, data science and data analytics. With my
+            background in
+            full stack software development and working with data, I am excited to apply these skills in the field.</p>
+          <p>When I am not behind a computer creating my next project or studying for my next exam, I enjoy spending my
+            time
+            behind a camera lens, listening to music, playing and watching sports and deep diving into the intricate
+            system of
+            automobiles or anything that has an engine.</p>
+          <a class="btn dark" href="photography.html">View my photography</a>
+        </div>
+        <aside class="side">
+          <h3>Let's connect</h3>
+          <p>Open to software engineering roles and internships.</p>
+          <a href="mailto:Julian_DeLaTorre1204@csu.fullerton.edu">Julian_DeLaTorre1204@csu.fullerton.edu</a>
+          <a href="https://github.com/Juliandltm22" target="_blank" rel="noopener">github.com/Juliandltm22</a>
+          <a href="https://www.linkedin.com/in/julian-de-la-torre" target="_blank"
+            rel="noopener">www.linkedin.com/in/julian-de-la-torre</a>
+          <p style="margin-top:1rem">Languages: English and Spanish, both native.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>&lt;Pasadena, CA /&gt; &copy; 2026 Julian De La Torre</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

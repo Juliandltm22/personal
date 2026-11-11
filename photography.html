@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Photography | Julian De La Torre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="photo-hero">
+        <div class="photo-in">
+            <a class="btn" href="index.html#about">Back to portfolio</a>
+            <h1><span class="br">&lt;</span>Photography<span class="br"> /&gt;</span></h1>
+            <p>// My passion for photography began in high school when I started carrying my family's old digital
+                camera everywhere, capturing memories of friends, family and scenery. Eventually, I saved
+                enough to buy my own DSLR, and my passion has continued to grow ever since.
+            </p>
+        </div>
+    </header>
+
+    <main class="gallery">
+        <div class="flow" id="flow" tabindex="0" role="region" aria-roledescription="carousel"
+            aria-label="Photography, flowing carousel. Use the left and right arrow keys to move.">
+            <div class="rail" id="rail">
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/sc-img.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Lexus SC - 03/15/2025</strong><span>Cars and Coffee collaboration with Carbon Canyon, and car clubs from CSUF, UCI, CPP, UCR and Pepperdine.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/bmw.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>BMW - 03/15/2026</strong><span>Cars and Coffee collaboration with Carbon Canyon and car clubs from CSUF, UCI, CPP, UCR and Pepperdine.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/airport.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>LAX After Hours - 03/19/2026</strong><span> Los Angeles International Airport, shows the loneliness of LAX once the last flight has departed.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/dreams.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Deep Roots - 06/18/2025</strong><span>Peaceful anti-ICE demonstration in Pasadena in response to local ICE raids.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/gwag.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Joshua Tree - 12/27/2026</strong><span>Shows the coarse-grained igneous rock the Joshua Tree area is known for.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/picked-flowers.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Beautiful Flowers - 06/18/2026</strong><span>Pasadena residents gather in peaceful protest against local ICE raids.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/rx7.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>2nd Gen RX-7</strong><span>Taken at a Cars and Coffee collaboration with Carbon Canyon Coffee, car clubs from CSUF, UCI, CPP, UCR and Pepperdine, a 2nd gen. RX-7 is shown.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/shohei2.JPG" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Dodgers vs Angels @ Dodger Stadium - 06/21/2026</strong><span>Image of player Shohei Ohtani during his first season with the Dodgers.</span></figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <div class="frame">
+                        <img src="photos/shohei.jpg" alt="Describe the photo">
+                    </div>
+                    <figcaption><strong>Dodgers vs Angels @ Dodger Stadium - 06/21/2026</strong><span>Image of player Shohei Ohtani during his first season with the Dodgers.</span></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="nav" id="prev" aria-label="Previous photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 5l-7 7 7 7" />
+                </svg>
+            </button>
+            <button class="nav pp" id="pp" aria-label="Pause" aria-pressed="false">
+                <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="6" y="5" width="4" height="14" rx="1" />
+                    <rect x="14" y="5" width="4" height="14" rx="1" />
+                </svg>
+                <svg class="i-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.5v13l11-6.5z" />
+                </svg>
+            </button>
+            <button class="nav" id="next" aria-label="Next photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </main>
+
+    <footer>&lt;Pasadena, CA /&gt; &copy; 2026 Julian De La Torre</footer>
+
+    <script src="photography.js"></script>
+</body>
+
+</html>
